@@ -1,3 +1,47 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseurl = "https://anthr4ce.github.io/"
+title = "Anthrace | CTF Writeups"
+theme = "hugo-coder"
+languagecode = "en-us"
+defaultcontentlanguage = "en"
+
+[params]
+author = "Anthrace"
+info = "Infosec student & CTF player"
+description = "My writeups, research and notes on CTFs and pentesting"
+keywords = "ctf, hacking, cybersecurity, writeups, web, osint, forensic, crypto"
+avatarurl = "/images/avatar.png"
+dateformat = "2006-01-02"
+customCSS = ["css/custom.css"]
+
+# Social links
+ [[params.social]]
+ name = "GitHub"
+ icon = "fa fa-github"
+ weight = 1
+ url = "https://github.com/anthr4ce"
+
+ [[params.social]]
+ name = "RootMe"
+ icon = "fa-rootme"
+ weight = 2
+ url = "https://www.root-me.org/Anthrace"
+
+  [[params.social]]
+ name = "Linkedin"
+ icon = "fa fa-linkedin"
+ weight = 1
+ url = "https://www.linkedin.com/in/ayoub-el-yadini/"
+
+[pagination]
+  pagerSize = 5
+
+[[menu.main]]
+name = "Writeups"
+weight = 1
+url = "/posts/"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+

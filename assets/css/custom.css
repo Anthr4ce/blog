@@ -1,0 +1,14 @@
+/* static/css/custom.css */
+
+/* Define a new icon class for RootMe */
+.fa-rootme {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background: url('/images/rootme-logo.svg') no-repeat center center;
+  background-size: contain;
+  /* hide any text */
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
